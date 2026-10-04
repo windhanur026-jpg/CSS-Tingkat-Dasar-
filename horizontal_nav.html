@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: Verdana, Tahoma, Geneva, sans-serif;
+    }
+
+    nav {
+      display: inline-block;
+      background-color: #ebebeb;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;            /* menu berjajar horizontal */
+    }
+
+    nav li a {
+      display: block;
+      width: 130px;
+      padding: 14px 0;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #555;
+      border-bottom: 5px solid #ebebeb;
+      transition: all 0.3s;
+    }
+
+    /* menu yang sedang aktif */
+    nav li a.active {
+      background-color: #42aaaa;
+      color: white;
+      border-bottom: 5px solid #42aaaa;
+    }
+
+    /* efek hover */
+    nav li a:hover {
+      background-color: #444;
+      color: white;
+      border-bottom: 5px solid #42aaaa;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</body>
+</html> 
